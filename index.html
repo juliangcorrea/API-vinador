@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APIvinador</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- JavaScript-->
+    <script defer src="https://kit.fontawesome.com/9899547b8c.js" crossorigin="anonymous"></script>
+    <script defer src="/js/main.js"></script>
+</head>
+<body>
+    <main>
+        <section class="guess-section">
+            <img src="/resources/images/IMG_6204.jpg" alt="a picture of a fortune-teller machine" class="genie">
+            <article class="guess-form">
+                <i class="icon fa-solid fa-star"></i>
+                <i class="icon fa-solid fa-moon"></i>
+                <h2>API-vinador</h2>
+                <h3>Ingrese su nombre de pila e intentaré adivinar su edad, género y nacionalidad</h3>
+                <form action="" class="name-form">
+                    <fieldset class="name-form-field">
+                        <label for="name" class="user-name">Escriba su nombre</label>
+                        <input type="text" name="name" id="user-name" class="user-name-input">
+                        <button type="submit" class="submit-btn">Adivinar</button>
+                        <p class="warning"></p>
+                    </fieldset>
+                </form>
+                <div class="data">
+                    <i class="load fa-solid fa-spinner hide"></i>
+                    <ul class="data-container">
+                        <li>Nombre: <span class="user-data"></span></li>
+                        <li>Edad: <span class="user-data"></span></li>
+                        <li>Género: <span class="user-data"></span></li>
+                        <li>Nacionalidad: <span class="user-data"></span></li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
